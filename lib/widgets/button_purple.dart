@@ -37,9 +37,7 @@ class ButtonPurple extends StatelessWidget {
               end: FractionalOffset(1.0, 0.6),
               stops: [0.0, 0.6],
               tileMode: TileMode.clamp
-
             )
-
         ),
 
         child: Center(
@@ -53,7 +51,6 @@ class ButtonPurple extends StatelessWidget {
 
           ),
         ),
-
       ),
     );
   }
