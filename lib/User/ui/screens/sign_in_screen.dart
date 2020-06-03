@@ -4,6 +4,7 @@ import 'package:platzi_trips_app/widgets/gradient_back.dart';
 import 'package:platzi_trips_app/widgets/button_green.dart';
 import 'package:platzi_trips_app/User/bloc/bloc_user.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
+import 'package:platzi_trips_app/platzi_trips_cupertino.dart';
 
 class SignInScreen extends StatefulWidget{
   @override
@@ -20,7 +21,21 @@ class _SignInScreen extends State<SignInScreen>{
   @override
   Widget build(BuildContext context) {
     userBloc = BlocProvider.of(context);
-    return signInGoogleUI();
+    return _handleCurrentSession();
+  }
+
+  Widget _handleCurrentSession(){
+    return StreamBuilder(
+      stream: userBloc.authStatus,
+      builder: (BuildContext context, AsyncSnapshot snapshot){
+        //snapshot- data - Object User
+        if(!snapshot.hasData || snapshot.hasError){
+          return signInGoogleUI();
+        }else{
+          return PlatziTripsCupertino();
+        }
+      },
+    );
   }
 
   Widget signInGoogleUI(){

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'file:///C:/Users/crist/FlutterProjects/platzi_trips_app/lib/Place/place.dart';
+import 'package:platzi_trips_app/Place/model/place.dart';
 import 'package:platzi_trips_app/User/ui/widgets/profile_place_info.dart';
 import 'package:platzi_trips_app/User/ui/widgets/profile_place.dart';
 
