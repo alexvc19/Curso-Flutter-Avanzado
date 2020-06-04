@@ -77,7 +77,7 @@ class ProfileHeader extends StatelessWidget {
             Text("No se pudo cargar la informacion. Haz login")
           ],
         ),
-      );;
+      );
     }else{
       print("Logeado");
       print(snapshot.data);

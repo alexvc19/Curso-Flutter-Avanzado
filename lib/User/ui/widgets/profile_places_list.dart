@@ -4,8 +4,25 @@ import 'package:platzi_trips_app/Place/model/place.dart';
 
 class ProfilePlacesList extends StatelessWidget {
 
-  Place place = new Place('Knuckles Mountains Range', 'Hiking. Water fall hunting. Natural bath', 'Scenery & Photography', '123,123,123');
+  /*Place place = new Place('Knuckles Mountains Range', 'Hiking. Water fall hunting. Natural bath', 'Scenery & Photography', '123,123,123');
   Place place2 = new Place('Mountains', 'Hiking. Water fall hunting. Natural bath', 'Scenery & Photography', '321,321,321');
+*/
+
+
+  Place place2 = Place(
+      name: "Mountains",
+      description: "Hiking. Water fall hunting. Natural bath, Scenery & Photography ",
+      urlImage: "https://upload.wikimedia.org/wikipedia/commons/3/3c/San_Juans_north_of_Durango.jpg",
+      likes: 10
+  );
+
+  Place place = Place(
+      name: "Knuckles Mountains Range",
+      description: "Hiking. Water fall hunting. Natural bath",
+      urlImage: "https://upload.wikimedia.org/wikipedia/commons/3/3c/San_Juans_north_of_Durango.jpg",
+      likes: 3,
+      userOwner: null
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +35,8 @@ class ProfilePlacesList extends StatelessWidget {
       ),
       child: Column(
         children: <Widget>[
-          ProfilePlace('assets/img/river.jpeg', place),
-          ProfilePlace('assets/img/mountain.jpeg', place2),
+          ProfilePlace(place),
+          ProfilePlace( place2),
         ],
       ),
     );
