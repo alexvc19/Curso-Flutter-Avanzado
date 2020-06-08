@@ -17,12 +17,12 @@ class UserBloc implements Bloc {
   //casos de uso
   //1.- SignIn a la aplicacion Google
   Future<FirebaseUser> signIn(){
-
-    return _auth_repository.signInFirebase() ;
+    return _auth_repository.signInFirebase();
   }
 //2. Registrar usuario en base de datos
   final _cloudFirestoreRepository = CloudFirestoreRepository();
   void updateUserData(User user) => _cloudFirestoreRepository.updateUserDataFirestore(user);
+
   signOut(){
     _auth_repository.signOut();
   }

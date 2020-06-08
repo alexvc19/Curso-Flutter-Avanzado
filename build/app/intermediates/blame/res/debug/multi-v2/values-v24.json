@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\crist\\FlutterProjects\\Curso-de-Flutter-Avanzado-en-Platzi\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "/Users/alejandrovelasco/FlutterProjects/Curso_Flutter_Avanzado/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\crist\\.gradle\\caches\\transforms-1\\files-1.1\\media-1.0.0-rc01.aar\\fbe28d56de0ea7154507d85a24f08bf4\\res\\values-v24\\values-v24.xml",
+                    "source": "/Users/alejandrovelasco/.gradle/caches/transforms-2/files-2.1/7762eee43208f4d9713441a1e7e630b3/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
