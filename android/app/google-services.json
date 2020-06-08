@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "542898954701-ip5u4isttkcvatou1uf3b5i7olrdu366.apps.googleusercontent.com",
+          "client_id": "542898954701-cuosh1hiqfagebqa7b2i6suf3hah8eob.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.anncode.platzitripsflutter",
-            "certificate_hash": "f91aed9e4643abf3ec90e54453087516d05aadf7"
+            "certificate_hash": "61bebf53ac9a3c029ca18ba83a6ea9824702d0dc"
           }
         },
         {
@@ -38,6 +38,13 @@
             {
               "client_id": "542898954701-qv2lh5eegh69gresccrd2phkrqnsrjsg.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "542898954701-u9uh59o2uv5t6kpoogkpdkd6vegb68tt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.anncode.platzitripsflutter"
+              }
             }
           ]
         }

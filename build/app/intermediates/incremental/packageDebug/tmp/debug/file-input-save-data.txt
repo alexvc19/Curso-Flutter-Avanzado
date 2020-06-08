@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Jun 04 07:10:21 CDT 2020
+#Mon Jun 08 02:59:14 CDT 2020
 17.baseType=DIRECTORY
 4.path=flutter_assets/assets/img/people.jpg
 25.base=/Users/alejandrovelasco/FlutterProjects/Curso_Flutter_Avanzado/build/app/intermediates/merged_assets/debug/out

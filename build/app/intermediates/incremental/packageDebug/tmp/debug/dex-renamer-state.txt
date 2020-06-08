@@ -1,4 +1,4 @@
-#Thu Jun 04 07:10:21 CDT 2020
+#Mon Jun 08 02:59:12 CDT 2020
 base.2=/Users/alejandrovelasco/FlutterProjects/Curso_Flutter_Avanzado/build/app/intermediates/transforms/dexMerger/debug/10
 base.1=/Users/alejandrovelasco/FlutterProjects/Curso_Flutter_Avanzado/build/app/intermediates/transforms/dexMerger/debug/1
 base.0=/Users/alejandrovelasco/FlutterProjects/Curso_Flutter_Avanzado/build/app/intermediates/transforms/dexMerger/debug/0
