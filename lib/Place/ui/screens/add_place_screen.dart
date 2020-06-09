@@ -2,8 +2,11 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:generic_bloc_provider/generic_bloc_provider.dart';
+import 'package:platzi_trips_app/Place/model/place.dart';
 import 'package:platzi_trips_app/Place/ui/widgets/card_image.dart';
 import 'package:platzi_trips_app/Place/ui/widgets/title_input_location.dart';
+import 'package:platzi_trips_app/User/bloc/bloc_user.dart';
 import 'package:platzi_trips_app/User/ui/widgets/title_header.dart';
 import 'package:platzi_trips_app/widgets/button_purple.dart';
 import 'package:platzi_trips_app/widgets/gradient_back.dart';
@@ -24,6 +27,7 @@ class _AddPlaceScreen extends State<AddPlaceScreen>{
   @override
   Widget build(BuildContext context){
 
+    UserBloc userBloc = BlocProvider.of<UserBloc>(context);
     final _controllerTitlePlace = TextEditingController();
     final _controllerDescription = TextEditingController();
 
@@ -90,8 +94,16 @@ class _AddPlaceScreen extends State<AddPlaceScreen>{
 
                     //2.- Cloud Firestore
                     //Place - title, description, url, userOwner, likes
-                  }
-                  ),
+                    userBloc.updatePlaceData(Place(
+                        name: _controllerTitlePlace.text,
+                        description: _controllerDescription.text,
+                        likes: 0,
+
+                    )).whenComplete((){
+                      print("TERMINO");
+                      Navigator.pop(context);
+                    });
+                  }),
                 )
               ],
             ),
