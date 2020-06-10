@@ -112,6 +112,7 @@ class _AddPlaceScreen extends State<AddPlaceScreen>{
                                 urlImage: urlImage,
                                 likes: 0,
 
+
                               )).whenComplete((){
                                 print("TERMINO");
                                 Navigator.pop(context);
