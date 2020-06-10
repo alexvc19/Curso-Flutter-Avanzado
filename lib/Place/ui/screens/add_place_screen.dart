@@ -1,7 +1,6 @@
-
 import 'dart:io';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 import 'package:platzi_trips_app/Place/model/place.dart';
 import 'package:platzi_trips_app/Place/ui/widgets/card_image.dart';
@@ -67,7 +66,7 @@ class _AddPlaceScreen extends State<AddPlaceScreen>{
                 Container(
                   alignment: Alignment.center,
                   child: CardImageWithFabIcon(
-                      pathImage: "assets/img/beach_palm.jpeg",// widget.image.path
+                      pathImage: widget.image.path,
                       width: 350.0,
                       height: 250.0,
                       iconData: Icons.camera, left: 0,

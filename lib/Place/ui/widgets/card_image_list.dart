@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/Place/ui/widgets/card_image.dart';
+import 'package:platzi_trips_app/Place/ui/widgets/card_image_home.dart';
 
 class CardImageList extends StatelessWidget {
+
+  final path1 = "assets/img/beach_palm.jpeg";
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    double width = 300.0;
-    double height = 350;
+    double width = 320.0;
+    double height = 240;
     double lef = 20.0;
 
     return Container(
@@ -16,7 +18,7 @@ class CardImageList extends StatelessWidget {
         padding: EdgeInsets.all(25.0),
         scrollDirection: Axis.horizontal,
         children: <Widget>[
-          CardImageWithFabIcon(pathImage: "assets/img/beach_palm.jpeg", iconData: Icons.favorite_border,
+          CardImageWithFabIcon(pathImage: path1, iconData: Icons.favorite_border,
           width: width,
             left: lef,
           height: height,),
