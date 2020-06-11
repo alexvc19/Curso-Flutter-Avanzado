@@ -1,46 +1,48 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/Place/ui/widgets/card_image_home.dart';
+import 'package:generic_bloc_provider/generic_bloc_provider.dart';
+import 'package:platzi_trips_app/Place/ui/widgets/card_image.dart';
+import 'package:platzi_trips_app/User/bloc/bloc_user.dart';
 
 class CardImageList extends StatelessWidget {
-
-  final path1 = "assets/img/beach_palm.jpeg";
+  UserBloc userBloc;
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    double width = 320.0;
-    double height = 240;
-    double lef = 20.0;
+    userBloc = BlocProvider.of<UserBloc>(context);
 
     return Container(
-      height: 350.0,
-      child: ListView(
-        padding: EdgeInsets.all(25.0),
-        scrollDirection: Axis.horizontal,
-        children: <Widget>[
-          CardImageWithFabIcon(pathImage: path1, iconData: Icons.favorite_border,
-          width: width,
-            left: lef,
-          height: height,),
-          CardImageWithFabIcon(pathImage:"assets/img/mountain.jpeg", iconData: Icons.favorite_border,
-            width: width,
-            left: lef,
-            height: height,),
-          CardImageWithFabIcon(pathImage:"assets/img/mountain_stars.jpeg", iconData: Icons.favorite_border,
-            width: width,
-            left: lef,
-            height: height,),
-          CardImageWithFabIcon(pathImage:"assets/img/river.jpeg", iconData: Icons.favorite_border,
-            width: width,
-            left: lef,
-            height: height,),
-          CardImageWithFabIcon(pathImage: "assets/img/sunset.jpeg", iconData: Icons.favorite_border,
-            width: width,
-            left: lef,
-            height: height,),
-        ],
-      ),
+        height: 320.0,
+        child: StreamBuilder(
+            stream: userBloc.placesStream,
+            builder: (context, AsyncSnapshot snapshot){
+              switch (snapshot.connectionState){
+                case ConnectionState.waiting:
+                  return CircularProgressIndicator();
+                case ConnectionState.none:
+                  return CircularProgressIndicator();
+                case ConnectionState.active:
+                  return listViewPlaces(userBloc.buildPlaces(snapshot.data.documents));
+                case ConnectionState.done:
+                  return listViewPlaces(userBloc.buildPlaces(snapshot.data.documents));
+
+                default:
+
+              }
+            }
+        )
+    );
+    
+  }
+
+
+  Widget listViewPlaces(List<CardImageWithFabIcon> placesCard){
+    return ListView(
+      padding: EdgeInsets.all(28.0),
+      scrollDirection: Axis.horizontal,
+      children: placesCard,
     );
   }
+
 
 }

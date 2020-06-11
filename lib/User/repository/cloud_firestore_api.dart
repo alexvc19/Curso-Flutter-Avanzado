@@ -1,6 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/Place/model/place.dart';
+import 'package:platzi_trips_app/Place/ui/widgets/card_image.dart';
 import 'package:platzi_trips_app/User/model/user.dart';
 import 'package:platzi_trips_app/User/ui/widgets/profile_place.dart';
 
@@ -47,7 +50,7 @@ class CloudFirestoreAPI{
 
     });
   }
-  List<ProfilePlace> buildPlaces(List<DocumentSnapshot> placesListSnapshot){
+  List<ProfilePlace> buildMyPlaces(List<DocumentSnapshot> placesListSnapshot){
     List<ProfilePlace> profilePlaces = List<ProfilePlace>();
     placesListSnapshot.forEach((p) {
       profilePlaces.add(ProfilePlace(
@@ -61,5 +64,27 @@ class CloudFirestoreAPI{
     });
     return profilePlaces;
 
+  }
+
+List<CardImageWithFabIcon> buildPlaces(List<DocumentSnapshot> placesListSnapshot) {
+  List<CardImageWithFabIcon> placesCard = List<CardImageWithFabIcon>();
+  double width = 300.0;
+  double height = 350.0;
+  double left = 20.0;
+  IconData iconData = Icons.favorite_border;
+
+  placesListSnapshot.forEach((p) {
+    placesCard.add(CardImageWithFabIcon(
+      pathImage: p.data['urlImage'],
+      width: width,
+      height: height,
+      left: left,
+      onPressedFabIcob: () {
+
+      },
+      iconData: iconData,
+    ));
+  });
+  return placesCard;
   }
 }
