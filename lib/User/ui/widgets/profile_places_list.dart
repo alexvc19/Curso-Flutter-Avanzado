@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 import 'package:platzi_trips_app/User/bloc/bloc_user.dart';
-import 'package:platzi_trips_app/User/ui/widgets/profile_place.dart';
+import 'package:platzi_trips_app/User/model/user.dart';
 import 'package:platzi_trips_app/Place/model/place.dart';
 
 class ProfilePlacesList extends StatelessWidget {
 
   UserBloc userBloc;
+  User user;
+  ProfilePlacesList(@required this.user);
 
   Place place2 = Place(
       name: "Mountains",
@@ -26,7 +28,6 @@ class ProfilePlacesList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     userBloc = BlocProvider.of<UserBloc>(context);
-
     return Container(
       margin: EdgeInsets.only(
           top: 10.0,
@@ -34,12 +35,11 @@ class ProfilePlacesList extends StatelessWidget {
           right: 20.0,
           bottom: 10.0
       ),
-      child: StreamBuilder(stream: userBloc.placesListStream, builder: (context, AsyncSnapshot snapshot){
+      child: StreamBuilder(stream: userBloc.myPlacesListStram(user.uid), builder: (context, AsyncSnapshot snapshot){
         switch(snapshot.connectionState){
           case ConnectionState.waiting:
             return CircularProgressIndicator();
           case ConnectionState.done:
-            snapshot.data.documents;
             return Column(
               children: userBloc.buildPlaces(snapshot.data.documents)
             );

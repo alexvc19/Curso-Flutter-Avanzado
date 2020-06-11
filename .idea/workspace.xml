@@ -18,11 +18,11 @@
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Place/model/place.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Place/model/place.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/xcuserdata/alejandrovelasco.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcworkspace/xcuserdata/alejandrovelasco.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/User/bloc/bloc_user.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/User/bloc/bloc_user.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/User/repository/cloud_firestore_api.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/User/repository/cloud_firestore_api.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/User/repository/cloud_firestore_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/User/repository/cloud_firestore_repository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/User/ui/widgets/profile_place_info.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/User/ui/widgets/profile_place_info.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/User/ui/screens/profile_header.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/User/ui/screens/profile_header.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/User/ui/screens/profile_trips.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/User/ui/screens/profile_trips.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/User/ui/widgets/profile_places_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/User/ui/widgets/profile_places_list.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,36 +162,36 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="245" y="189" key="#PSD/0.0.1440.900@0.0.1440.900" timestamp="1591142626231" />
-    <state width="1398" height="259" key="GridCell.Tab.0.bottom" timestamp="1591792281490">
+    <state width="1398" height="253" key="GridCell.Tab.0.bottom" timestamp="1591856808098">
       <screen x="0" y="23" width="1440" height="798" />
     </state>
     <state width="1398" height="176" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1591142800143" />
     <state width="1398" height="123" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1591691891307" />
-    <state width="1398" height="259" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1591792281490" />
+    <state width="1398" height="253" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1591856808098" />
     <state width="1398" height="123" key="GridCell.Tab.0.bottom/0.23.1440.800@0.23.1440.800" timestamp="1591616070096" />
     <state width="1398" height="392" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1591711607502" />
-    <state width="1398" height="259" key="GridCell.Tab.0.center" timestamp="1591792281489">
+    <state width="1398" height="253" key="GridCell.Tab.0.center" timestamp="1591856808098">
       <screen x="0" y="23" width="1440" height="798" />
     </state>
     <state width="1398" height="176" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1591142800142" />
     <state width="1398" height="123" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1591691891306" />
-    <state width="1398" height="259" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1591792281489" />
+    <state width="1398" height="253" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1591856808098" />
     <state width="1398" height="123" key="GridCell.Tab.0.center/0.23.1440.800@0.23.1440.800" timestamp="1591616070095" />
     <state width="1398" height="392" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1591711607501" />
-    <state width="1398" height="259" key="GridCell.Tab.0.left" timestamp="1591792281489">
+    <state width="1398" height="253" key="GridCell.Tab.0.left" timestamp="1591856808097">
       <screen x="0" y="23" width="1440" height="798" />
     </state>
     <state width="1398" height="176" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1591142800141" />
     <state width="1398" height="123" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1591691891306" />
-    <state width="1398" height="259" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1591792281489" />
+    <state width="1398" height="253" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1591856808097" />
     <state width="1398" height="123" key="GridCell.Tab.0.left/0.23.1440.800@0.23.1440.800" timestamp="1591616070095" />
     <state width="1398" height="392" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1591711607501" />
-    <state width="1398" height="259" key="GridCell.Tab.0.right" timestamp="1591792281490">
+    <state width="1398" height="253" key="GridCell.Tab.0.right" timestamp="1591856808098">
       <screen x="0" y="23" width="1440" height="798" />
     </state>
     <state width="1398" height="176" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1591142800142" />
     <state width="1398" height="123" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1591691891307" />
-    <state width="1398" height="259" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1591792281490" />
+    <state width="1398" height="253" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1591856808098" />
     <state width="1398" height="123" key="GridCell.Tab.0.right/0.23.1440.800@0.23.1440.800" timestamp="1591616070095" />
     <state width="1398" height="392" key="GridCell.Tab.0.right/0.23.1440.801@0.23.1440.801" timestamp="1591711607502" />
     <state x="221" y="98" key="SettingsEditor" timestamp="1591161454327">
@@ -216,9 +216,9 @@
       <screen x="0" y="23" width="1440" height="798" />
     </state>
     <state x="532" y="31" width="712" height="777" key="find.popup/0.23.1440.798@0.23.1440.798" timestamp="1591786889051" />
-    <state x="385" y="145" width="670" height="676" key="search.everywhere.popup" timestamp="1591791929995">
+    <state x="385" y="145" width="670" height="676" key="search.everywhere.popup" timestamp="1591852730760">
       <screen x="0" y="23" width="1440" height="798" />
     </state>
-    <state x="385" y="145" width="670" height="676" key="search.everywhere.popup/0.23.1440.798@0.23.1440.798" timestamp="1591791929995" />
+    <state x="385" y="145" width="670" height="676" key="search.everywhere.popup/0.23.1440.798@0.23.1440.798" timestamp="1591852730760" />
   </component>
 </project>
