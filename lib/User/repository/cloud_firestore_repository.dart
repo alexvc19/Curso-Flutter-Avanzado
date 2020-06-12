@@ -9,12 +9,12 @@ class CloudFirestoreRepository {
 
   final _cloudFirestoreAPI = CloudFirestoreAPI();
 
-  void updateUserDataFirestore(User user) =>
-      _cloudFirestoreAPI.updateUserData(user);
-
-  Future<void> updatePlaceData(Place place) =>
-      _cloudFirestoreAPI.updatePlaceData(place);
+  void updateUserDataFirestore(User user) => _cloudFirestoreAPI.updateUserData(user);
+  Future<void> updatePlaceData(Place place) => _cloudFirestoreAPI.updatePlaceData(place);
 
   List<ProfilePlace> buildMyPlaces(List<DocumentSnapshot> placesListSnapshot) => _cloudFirestoreAPI.buildMyPlaces(placesListSnapshot);
-  List<CardImageWithFabIcon> buildPlaces(List<DocumentSnapshot> placesListSnapshot) => _cloudFirestoreAPI.buildPlaces(placesListSnapshot);
+  //List<CardImageWithFabIcon> buildPlaces(List<DocumentSnapshot> placesListSnapshot) => _cloudFirestoreAPI.buildPlaces(placesListSnapshot);
+  List<Place> buildPlaces(List<DocumentSnapshot> placesListSnapshot, User user) => _cloudFirestoreAPI.buildPlaces(placesListSnapshot, user);
+
+  Future likePlace(Place place, String uid) => _cloudFirestoreAPI.likePlace(place,uid);
 }

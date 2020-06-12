@@ -35,7 +35,7 @@ class ProfilePlacesList extends StatelessWidget {
           right: 20.0,
           bottom: 10.0
       ),
-      child: StreamBuilder(stream: userBloc.myPlacesListStream(user.uid), builder: (context, AsyncSnapshot snapshot){
+      child: StreamBuilder(stream: userBloc.myPlacesListSream(user.uid), builder: (context, AsyncSnapshot snapshot){
         switch(snapshot.connectionState){
           case ConnectionState.waiting:
             return CircularProgressIndicator();

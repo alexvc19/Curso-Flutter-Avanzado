@@ -18,6 +18,7 @@ class AddPlaceScreen extends StatefulWidget {
   File image;
   AddPlaceScreen({Key key, this.image});
 
+
   @override
   State createState(){
     return _AddPlaceScreen();
@@ -33,6 +34,7 @@ class _AddPlaceScreen extends State<AddPlaceScreen>{
     final _controllerDescription = TextEditingController();
 
     return Scaffold(
+
       body: Stack(
         children: <Widget>[
           GradientBack(height: 300.0),
@@ -72,6 +74,7 @@ class _AddPlaceScreen extends State<AddPlaceScreen>{
                       width: 350.0,
                       height: 250.0,
                       iconData: Icons.camera, left: 0,
+                      internet: true,
                   ),
                 ),//Foto
                 Container(//TextField Title

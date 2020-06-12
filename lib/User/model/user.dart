@@ -20,7 +20,7 @@ User({
     @required this.email,
     @required this.photoUrl,
   this.myFavoritePlaces,
-  this.myPlaces
+  this.myPlaces, photoURL
 
 });
 }
